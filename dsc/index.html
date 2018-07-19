@@ -23,6 +23,7 @@ body{font-family: Roboto;}blockquote{border-color: #13120e;}.display-1{font-fami
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   
   
 </head>
@@ -54,9 +55,7 @@ body{font-family: Roboto;}blockquote{border-color: #13120e;}.display-1{font-fami
     <nav class="headerbar sticky-nav">
       <div class="brand">
           <span class="brand-logo">
-              <amp-img src="assets/images/high-res-icon-110x110.png" layout="responsive" width="55" height="55" alt="Darts Scorecard">
-                  
-              </amp-img>
+              <amp-img src="assets/images/high-res-icon-110x110.png" layout="responsive" width="55" height="55" alt="Darts Scorecard" />
           </span>
           <p class="brand-name mbr-fonts-style display-2">Darts Scorecard</p>
       </div>
@@ -75,14 +74,16 @@ body{font-family: Roboto;}blockquote{border-color: #13120e;}.display-1{font-fami
     
 
     <div class="container">
-        <h1 class="mbr-section-title mbr-fonts-style align-right mbr-bold mbr-white display-1">
-            <strong>Darts Scorecard</strong></h1>
-        <h3 class="mbr-section-subtitle mbr-fonts-style align-right mbr-white mbr-light display-2">
-            Are you ready to become the next Rob Cross?</h3>
+        <h1 class="mbr-section-title mbr-fonts-style align-right mbr-bold mbr-white display-1"><strong>Darts Scorecard</strong></h1>
+        <h3 class="mbr-section-subtitle mbr-fonts-style align-right mbr-white mbr-light display-2">Are you ready to become the next Rob Cross?</h3>
+        <p class="mbr-fonts-style mbr-text align-right mbr-white display-7">Download the Darts Scorecard app from Google Play and see your game improve.</p>
         
-        <div class="mbr-section-btn align-right"><a class="btn btn-md btn-primary display-4" href="index.html#features11-1">
-                LEARN MORE
-            </a></div>
+        <div class="mbr-section-btn align-right">
+            <a class="btn btn-md btn-primary display-4" href="https://play.google.com/store/apps/details?id=nl.entreco.dartsscorecard" target="_blank">DOWNLOAD</a>
+        </div>
+        <div class="mbr-section-btn align-right">
+            <a class="btn btn-md btn-primary display-4" href="index.html#features11-1">LEARN MORE</a>
+        </div>
     </div>
 
 </section>
@@ -111,6 +112,35 @@ body{font-family: Roboto;}blockquote{border-color: #13120e;}.display-1{font-fami
     
     
     <div class="container">
+        
+        <div class="mbr-row mbr-justify-content-center">
+            <amp-carousel type="slides"
+              width="450"
+              height="300"
+              controls
+              loop
+              autoplay
+              delay="3500"
+              data-next-button-aria-label="Next"
+              data-previous-button-aria-label="Previous">
+              <amp-img src="assets/images/game.png"
+                width="450"
+                height="300" ></amp-img>
+              <amp-img src="assets/images/teamplay.png"
+                width="450"
+                height="300" ></amp-img>
+              <amp-img src="assets/images/matchstats.png"
+                width="450"
+                height="300" ></amp-img>
+              <amp-img src="assets/images/profile.png"
+                width="450"
+                height="300" ></amp-img>
+                <amp-img src="assets/images/launch.png"
+                width="450"
+                height="300" ></amp-img>
+            </amp-carousel>
+        </div>
+        
         <div class="mbr-row mbr-justify-content-center">
             <div class="card mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4">
                 <h3 class="mbr-section-title mbr-fonts-style align-left mbr-bold mbr-white display-5">
@@ -145,9 +175,7 @@ body{font-family: Roboto;}blockquote{border-color: #13120e;}.display-1{font-fami
     <div class="container">
         <div class="mbr-row mbr-justify-content-center">
             <div class="image-block mbr-col-sm-12 mbr-col-md-3">
-                <amp-img src="assets/images/logo-dark-510x423.png" layout="responsive" width="255.60283687943263" height="212" alt="Entreco">
-                    
-                </amp-img>
+                <a href="https://entreco.nl"><amp-img src="assets/images/logo-dark-510x423.png" layout="responsive" width="255.60283687943263" height="212" alt="Entreco" /></a>
             </div>
 
         </div>
